@@ -8,12 +8,17 @@
    <meta name="keywords" content="резюме, работа">
    <meta name="description" content="Это сайт для резюме">
    <title> Сайт-резюме </title>
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <img src="maltipy.jpeg" width="177" alt="здесь фото милой собачки породы Мальтипу">
-   <h1>Кристина М</h1>
-   <p>Хочу изучить <strong> веб-разработку </strong> и начать создавать <em>сайты</em>.</p>
+   <div class="container">
+      <div class="info">
+         <img src="maltipy.jpeg" alt="здесь фото милой собачки породы Мальтипу" class="avatar">
+
+         <div class="info-text">
+            <h1>Кристина М</h1>
+            <p>Хочу изучить <strong> веб-разработку </strong> и начать создавать <em>сайты</em>.</p>
 </body>
 <h4>Список социальных сетей:</h4>
 <a href="https://vk.com/wkrisq" target="_blank"> Вконтакте </a>
@@ -21,58 +26,86 @@
 <a href="https://instagram.com/wkrisq" target="_blank"> Instagram </a>
 |
 <a href="https://t.me/wkrisq" target="_blank"> Telegram </a>
+</div>
+</div>
 
-<h2>Мои хобби</h2>
-<ol>
-   <li>Кулинария</li>
-   <li>Спорт</li>
-   <li>Фотография</li>
-   <li>Книги</li>
-</ol>
-
-<h2>Опыт работы</h2>
-<table>
-   <thead>
-      <tr>
-         <th>Название</th>
-         <th>Должность</th>
-         <th>Год</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Школа</td>
-         <td>Ученик</td>
-         <td>2007-2018</td>
-      </tr>
-
-      <tr>
-         <td>Универ</td>
-         <td>Студент</td>
-         <td>2018-2023</td>
-      </tr>
-   </tbody>
-</table>
-
-<h2>Связаться со мной</h2>
-<form>
-   <div>
-      <label for="name"> Ваше имя: </label>
-      <input type="text" id="name" placeholder="Введите имя">
+<div class="card">
+   <div class="card-1">
+      <h2>Мои хобби</h2>
+      <ol class="list">
+         <li>Кулинария</li>
+         <li>Спорт</li>
+         <li>Фотография</li>
+         <li>Книги</li>
+      </ol>
    </div>
 
-   <div>
-      <label for="email">Ваш email: </label>
-      <input type="email" id="email" placeholder="Введите email">
+   <div class="card-2">
+      <h2>Опыт работы</h2>
+      <table class="table">
+         <!-- <thead>
+            <tr>
+               <th>Название</th>
+               <th>Должность</th>
+               <th>Год</th>
+            </tr>
+         </thead> -->
+         <tbody>
+            <tr>
+               <td>Школа</td>
+               <td>Ученик</td>
+               <td>2007-2018</td>
+            </tr>
+
+            <tr>
+               <td>Универ</td>
+               <td>Студент</td>
+               <td>2018-2023</td>
+            </tr>
+         </tbody>
+      </table>
    </div>
 
-   <div>
-      <label for="messange">Ваше сообщение:</label>
-      <br>
-      <textarea id="messange" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+   <div class="card-4">
+      <h2>Мои курсы</h2>
+
+      <ul class="link-list">
+         <li>
+            <a href="#"> курс №1 </a>
+         </li>
+         <li>
+            <a href="#"> курс №2 </a>
+         </li>
+      </ul>
    </div>
 
-   <input type="submit" value="Отправить!">
-</form>
+   <div class="card-3">
+      <form action="/" class="form">
+         <h2>Связаться со мной</h2>
+
+         <div class="form-row">
+
+            <div class="form-group">
+               <label for="name"> Ваше имя: </label>
+               <input type="text" id="name" placeholder="Введите имя">
+            </div>
+
+            <div class="form-group">
+               <label for="email">Ваш email: </label>
+               <input type="email" id="email" placeholder="Введите email">
+            </div>
+         </div>
+
+         <div class="form-group">
+            <label for="messange">Ваше сообщение:</label>
+            <br>
+            <textarea id="messange" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+         </div>
+
+         <input class="btn" type="submit" value="Отправить!">
+      </form>
+   </div>
+</div>
+</div>
 
 </html>
